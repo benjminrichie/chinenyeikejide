@@ -1,0 +1,43 @@
+header{
+    color: aqua;
+    background-color:darkmagenta ;
+}
+#header_picture{
+    size: 280px;
+    
+}
+body{
+    background-image: url("chi.png");
+    background-repeat: repeat-x;
+    background-size:10fr;
+    background-color: aqua;
+}
+#container{
+    display:grid;
+    grid-template-columns:2fr 2fr 2fr;
+    grid-gap: cover;
+}
+#body{
+    background-color: purple;
+    color: aqua;
+    background-image: url("chi.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+#cake{
+    background-color:pink ;
+    color: blue;
+    background-image: url("chi.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+#pin{
+    background-color: lightgreen;
+    color: deeppink;
+    background-image: url("chi.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+img:hover{
+    transform: rotate(360deg);
+}

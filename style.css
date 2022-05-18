@@ -1,0 +1,110 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.2fr 2fr 0.4fr;
+    height: 100vh;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "sidebar main main main"
+        "sidebar grid1 grid2 grid3"
+        "sidebar footer footer footer";
+    grid-gap: 1%;
+    text-align: center;
+    
+}
+a:hover{
+    text-decoration: rgb(114, 9, 40);
+}
+li{
+    display: inline;
+    list-style: none;
+    text-align:right;
+    padding: 4px;
+}
+nav{
+    background-color: rgb(94, 240, 240);
+    grid-area: nav;
+    padding-top: 0.7rem;
+}
+main{
+    background-color: rgb(89, 133, 133);
+    grid-area: main;
+    padding-top: 6rem;
+    color: azure;
+    font-size: larger;
+}
+#sidebar{
+    background-color: rgb(205, 218, 218);
+    grid-area: sidebar;
+    padding-top: 20rem;
+}
+#grid1{
+    background-color: rgb(205, 235, 235);
+    grid-area: grid1;
+    border-radius: 10px;
+    padding-top: 16rem;
+    background-image: url(chi.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#grid2{
+    background-color: rgb(98, 138, 138);
+    grid-area: grid2;
+    border-radius: 10px;
+    padding-top: 6rem;
+}
+#grid3{
+    background-color: rgb(118, 209, 209);
+    grid-area: grid3;
+    border-radius: 10px;
+    padding-top: 6rem;
+}  
+footer{
+    background-color: rgb(237, 252, 252);
+    grid-area: footer;
+    padding-top: 3rem;
+    border: 1PX solid blue;
+}
+/*
+@media only screen and (max-width:600px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.2fr 1.5fr 1fr 1fr 1fr 0.7fr;
+        height: 100vh;
+        grid-template-areas: 
+            "nav"
+            "sidebar"
+            "main"
+            "grid1"
+            "grid2"
+            "grid3"
+            "footer";
+        grid-gap: 1%;
+        text-align: center;
+       
+    }
+}
+*/
+@media only screen and (max-width:600px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1.2fr 1.6fr 1fr ;
+        height: 100vh;
+        grid-template-areas: 
+            "nav nav nav"
+            "sidebar sidebar sidebar"
+            "main main main"
+            "grid1 grid2 grid3"
+            "footer footer footer";
+        grid-gap: 1%;
+        text-align: center;
+        
+    }
+
+    #sidebar{
+        padding-top: 5rem;
+    }
+    
+}
